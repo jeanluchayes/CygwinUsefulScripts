@@ -1,0 +1,14 @@
+PATH=
+
+MANPATH=$MANPATH:$HOME/share/man
+PATH=$PATH:$HOME/bin
+PATH=$PATH:/usr/ccs/bin:/usr/sbin:/usr/bin:/usr/sfw/bin:/usr/sfw/sbin
+PATH=$PATH:/opt/bup/bin
+PATH=$PATH:/opt/bup_w_fuse/bin
+PATH=$PATH:/usr/local/bin:$PATH
+
+export PATH
+
+source ~/.yesgpgrc
+
+source ~/.programsrc

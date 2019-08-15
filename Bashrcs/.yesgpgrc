@@ -1,0 +1,10 @@
+
+killall gpg-agent
+killall ssh-agent
+killall ssh-paegent
+
+export GPG_TTY="$(tty)"
+export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
+eval "$(gpg-agent --daemon --enable-ssh-support --options ~/.gnupg/gpg-agent.conf)"
+
+alias gpg=gpg2

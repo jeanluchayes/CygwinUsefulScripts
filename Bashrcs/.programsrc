@@ -1,0 +1,10 @@
+PATH=$PATH:"/cygdrive/"$_CURRENT_DRIVE"/PortableApps/NodeJSPortable"
+alias node="/cygdrive/"$_CURRENT_DRIVE"/PortableApps/NodeJSPortable/node.exe"
+
+PATH=$PATH:"/cygdrive/"$_CURRENT_DRIVE"/PortableApps/CommonFiles/JDK64/bin"
+
+alias firefox="/cygdrive/"$_CURRENT_DRIVE"/PortableApps/FirefoxPortable/FirefoxPortable.exe"
+
+alias powershell="/cygdrive/c/Windows/System32/WindowsPowerShell/v1.0/powershell.exe"
+
+export PATH
