@@ -1,0 +1,1 @@
+..\setup-x86_64.exe -P wget,nano,unzip,gcc-g++

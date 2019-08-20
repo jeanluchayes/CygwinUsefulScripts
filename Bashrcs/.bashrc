@@ -1,6 +1,10 @@
 export SHELLOPTS
 set -o igncr
 
+_CWD=$(pwd)
+
+cd ~
+
 source ~/.nocondarc
 
 _CURRENT_DRIVE=$(python get_set_drive_letter.py)
@@ -11,7 +15,7 @@ _CURRENT_DRIVE=$(python get_set_drive_letter.py)
 #  Anaconda Environment Selection - Plese set CONDA_BASE_DIR to the directory
 #  containing the base installation of anaconda/miniconda.
 
-export CONDA_BASE_DIR="/mnt/"$_CURRENT_DRIVE"/PortableApps/Anaconda3"
+export CONDA_BASE_DIR="/cygdrive/"$_CURRENT_DRIVE"/PortableApps/Anaconda3"
 
 #  Proxy Servers & Network Setup (if needed)
 
@@ -24,7 +28,7 @@ export CONDA_BASE_DIR="/mnt/"$_CURRENT_DRIVE"/PortableApps/Anaconda3"
 export PYTHONIOENCODING=utf8
 
 
-. "/mnt/"$_CURRENT_DRIVE"/PortableApps/Anaconda3/etc/profile.d/conda.sh"
+. "/cygdrive/"$_CURRENT_DRIVE"/PortableApps/Anaconda3/etc/profile.d/conda.sh"
 
 ###############################################################################
 
@@ -69,5 +73,6 @@ PATH=$PATH:/opt/bup_w_fuse/bin
 
 #alias ar=/usr/bin/ar.exe
 
-
 export PATH
+
+cd $_CWD
