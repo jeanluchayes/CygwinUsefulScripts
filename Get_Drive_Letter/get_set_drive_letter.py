@@ -3,7 +3,7 @@
 import subprocess
 import os
 
-proc = subprocess.Popen(['get_drive_letter.sh'],stdout=subprocess.PIPE)
+proc = subprocess.Popen(['./get_drive_letter.sh'],stdout=subprocess.PIPE)
 line = proc.stdout.readline()
 if line:
 	print(line.rstrip())

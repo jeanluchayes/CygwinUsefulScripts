@@ -1,10 +1,30 @@
 
+#export GPG_TTY="$(tty)"
+#export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
+#eval "$(gpg-agent --daemon --enable-ssh-support --options ~/.gnupg/gpg-agent.conf)"
+
+alias gpg=gpg2
+
+PATH=$PATH:"/cygdrive/"$_CURRENT_DRIVE"/PortableApps/GnuPG/bin"
+
+export PATH
+
+export KEYID=0x5C01844539BDE8E6
+
+#export GNUPGHOME="/cygdrive/"$_CURRENT_DRIVE"/PortableApps/CygwinPortableTerminal/App/Runtime/cygwin/home/Jean-Luc/.gnupg"
+
+#export GNUPGHOME="~/.gnupg/"
+
+#export GNUPGHOME="/cygdrive/c/Users/jeanl/AppData/Roaming/gnupg"
+
 killall gpg-agent
 killall ssh-agent
 killall ssh-paegent
 
-export GPG_TTY="$(tty)"
-export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
-eval "$(gpg-agent --daemon --enable-ssh-support --options ~/.gnupg/gpg-agent.conf)"
+#Kill
+gpg-connect-agent killagent /bye
+#Start
+gpg-connect-agent /bye
 
-alias gpg=gpg2
+# ssh-pageant #
+eval $(/usr/bin/ssh-pageant -r -a "/tmp/.ssh-pageant-$USERNAME")

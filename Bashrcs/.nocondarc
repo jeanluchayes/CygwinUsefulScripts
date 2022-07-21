@@ -9,6 +9,8 @@ PATH=$PATH:/usr/local/bin:$PATH
 
 export PATH
 
+#alias ar=/usr/bin/ar.exe
+
 source ~/.yesgpgrc
 
 source ~/.programsrc

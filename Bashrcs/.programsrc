@@ -7,4 +7,9 @@ alias firefox="/cygdrive/"$_CURRENT_DRIVE"/PortableApps/FirefoxPortable/FirefoxP
 
 alias powershell="/cygdrive/c/Windows/System32/WindowsPowerShell/v1.0/powershell.exe"
 
+PATH=$PATH:"/cygdrive/"$_CURRENT_DRIVE"/PortableApps/NSISPortable"
+alias makensis="/cygdrive/"$_CURRENT_DRIVE"/PortableApps/NSISPortable/makensis.exe"
+
+PATH=$PATH:"/cygdrive/j/PortableApps/QEMU_Portable/qemu"
+
 export PATH

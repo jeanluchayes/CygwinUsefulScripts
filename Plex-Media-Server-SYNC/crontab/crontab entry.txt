@@ -1,0 +1,8 @@
+#3:01 AM, Start Rsync Daemon
+1 3 * * * cd /root && sh start_rsyncd.sh>>start_rsyncd.log
+
+#3:05 AM, run Sync Local to Cloud
+5 3 * * * cd /home/jeanluchayes && sh sync_local_cloud.sh>>sync_local_cloud.log
+
+#6:05 AM, run Delete Local after giving 3 Hours to Sync to Cloud
+5 6 * * * cd /home/jeanluchayes && sh delete_local_cloud.sh>>delete_local_cloud.log

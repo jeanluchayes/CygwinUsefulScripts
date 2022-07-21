@@ -1,9 +1,0 @@
-SUCCESS: The process "gpg-agent.exe" with PID 7396 has been terminated.
-ERROR: The process "ssh-agent.exe" not found.
-SUCCESS: The process "ssh-pageant.exe" with PID 13392 has been terminated.
-gpg-agent[13676]: enabled debug flags: ipc
-gpg-agent[13676]: listening on socket '/home/mobaxterm/.gnupg/S.gpg-agent'
-gpg-agent[13676]: listening on socket '/home/mobaxterm/.gnupg/S.gpg-agent.extra'
-gpg-agent[13676]: listening on socket '/home/mobaxterm/.gnupg/S.gpg-agent.browser'
-gpg-agent[13676]: listening on socket '/home/mobaxterm/.gnupg/S.gpg-agent.ssh'
-gpg-agent[10748]: gpg-agent (GnuPG) 2.2.8-unknown started
