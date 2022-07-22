@@ -1,5 +1,5 @@
 #!/bin/bash
 
-rsync "/cygdrive/f/Backups PC/SYNC/Pictures/" -avz --exclude={'.stfolder','.stversions'} \
---itemize-changes --progress --no-owner --no-group \
+rsync "/cygdrive/f/Backups PC/SYNC/Pictures/" -av --exclude={'.stfolder','.stversions'} \
+--append-verify --itemize-changes --progress --no-owner --no-group \
 -e "ssh -T -o Compression=no -o MACs=hmac-sha2-256 -x" root@52.147.207.156:/media/Plex/Pictures/
